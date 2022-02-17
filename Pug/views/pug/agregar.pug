@@ -1,0 +1,14 @@
+extends layout/base.pug
+block content 
+    form(action="/add" method="post")
+        div(class="input-group")
+            label(for="title" class="input-group-text") Nombre
+            input(name="title" class="form-control")
+        div(class="input-group")
+            label(for="price" class="input-group-text") Precio
+            input(name="price" type="number" class="form-control")
+        div(class="input-group")
+            label(for="thumbnail" class="input-group-text") Thumbnail
+            input(name="thumbnail" class="form-control")
+        div(class="input-group")
+            button(type="submit" class="btn btn-primary") Enviar

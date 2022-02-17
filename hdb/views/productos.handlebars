@@ -1,0 +1,21 @@
+<h1>PRODUCTOS</h1>
+<table class="table">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {{#each list}}
+                        <td>
+                            <img src={{thumbnail}} alt={{title}} width="100">
+                        </td>
+                        <td>{{title}}</td>
+                        <td>{{price}}</td>
+                    {{/each}}
+                </tr>
+            </tbody>
+        </table>

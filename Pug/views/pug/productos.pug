@@ -1,0 +1,20 @@
+extends layout/base.pug
+block content
+    div 
+        table(class="table")
+            thead
+                tr
+                    th &nbsp
+                    th Titulo
+                    th Precio
+            tbody
+                each prod in list
+                    tr
+                        td 
+                            img(src=prod.thumbnail alt="bike" width="50")
+                        td= prod.title 
+                        td= prod.price 
+                else 
+                    td No hay producto
+
+                        
